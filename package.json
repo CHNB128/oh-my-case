@@ -1,7 +1,7 @@
 {
   "name": "oh-my-case",
   "version": "1.0.0",
-  "description": "Case to case recursive convertor",
+  "description": "Recursive case to case conversion",
   "main": "index.js",
   "scripts": {
     "test": "jest"
