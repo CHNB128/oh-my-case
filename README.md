@@ -1,6 +1,6 @@
 # Oh my cases
 
-Library to recursively conver any types from any cases to destenation one
+Library to recursively convert any types from any cases to destination one
 
 ## Install
 
@@ -27,7 +27,8 @@ toCamle({'snake_case': 11}) // => {'snakeCase': 11}
 
 ## How to contribute
 
-To add support for new case, just add two functions `stringTo${case}` and `to${case}` into `index.js` and export function for case convertign.
+To add support for new case, just add two functions `stringTo${case}` and `to${case}` into `index.js` and export function for case conversion. 
+Don't forgot about tests.
 
 Example for `camelCase`:
 
@@ -47,6 +48,4 @@ module.exports = {
 }
 ```
 
-Then make a Pull Request and thank you to help grow open source :)
-
-
+Then make a Pull Request and thanks to you for help grow open source :)
