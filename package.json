@@ -1,6 +1,6 @@
 {
   "name": "oh-my-case",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Recursive case to case conversion",
   "main": "index.js",
   "scripts": {
@@ -26,10 +26,9 @@
     "url": "https://github.com/CHNB128/oh-my-case/issues"
   },
   "homepage": "https://github.com/CHNB128/oh-my-case#readme",
-  "dependencies": {
-    "ramda": "^0.27.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "jest": "^26.4.1"
+    "jest": "^26.4.1",
+    "ramda": "^0.27.1"
   }
 }
