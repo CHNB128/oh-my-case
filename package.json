@@ -1,6 +1,6 @@
 {
   "name": "oh-my-case",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Recursive case to case conversion",
   "main": "index.js",
   "scripts": {
