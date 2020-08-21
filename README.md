@@ -19,10 +19,10 @@ yarn add oh-my-cases
 ## Usage
 
 ```js
-import { toCamel } from 'oh-my-cases'
+import { snakeToCamel } from 'oh-my-cases'
 
-toCamel('snake_case') // => 'snakeCase'
-toCamle({'snake_case': 11}) // => {'snakeCase': 11}
+snakeToCamel('snake_case') // => 'snakeCase'
+snakeToCamel({'snake_case': 11}) // => {'snakeCase': 11}
 ```
 
 ## How to contribute
