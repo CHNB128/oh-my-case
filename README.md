@@ -27,7 +27,7 @@ toCamle({'snake_case': 11}) // => {'snakeCase': 11}
 
 ## How to contribute
 
-To add support for new case, just add two functions `stringTo${case}` and `to${case}` into `index.js` and export function for case conversion. 
+To add support for new case, just add two functions like `snakeStringtoCamel` and `snakeToCamel` into `index.js` and export function for case conversion.
 Don't forgot about tests.
 
 Example for `camelCase`:
@@ -35,15 +35,15 @@ Example for `camelCase`:
 ```js
 // index.js
 
-const stringToCamel = (value) => {
+const snakeStringToCamel = (value) => {
   return value.replace(/_(\w)/g, (m) => m[1].toUpperCase())
 }
 
-const toCamel = toCase(stringToCamel)
+const snakeToCamel = toCase(snakeStringToCamel)
 
 module.exports = {
   // ...
-  toCamel,
+  snakeToCamel
   // ...
 }
 ```
