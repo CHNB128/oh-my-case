@@ -9,6 +9,8 @@ it.concurrent('Convert array from snake to camel case', async () => {
   const a = R.times((n) => `snake_case_${n}`, 5)
   const b = R.times((n) => `snakeCase${n}`, 5)
   expect(snakeToCamel(a)).toStrictEqual(b);
+  const c = { array: ['shouldBeSameCaseAsBefore'] }
+  expect(snakeToCamel(c)).toStrictEqual(c)
 });
 
 it.concurrent('Convert object from snake to camel case', async () => {
