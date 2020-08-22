@@ -1,8 +1,9 @@
 const R = require('ramda')
-const { snakeToCamel } = require('./index');
+const { snakeToCamel, camelToSnake } = require('./index');
 
 it.concurrent('Convert string from snake to camel case', async () => {
   expect(snakeToCamel('snake_case')).toBe('snakeCase');
+  expect(camelToSnake('camelCase')).toBe('camel_case');
 });
 
 it.concurrent('Convert array from snake to camel case', async () => {

@@ -21,12 +21,13 @@ const toCase = (stringToCaseFn) => (value) => {
   }
 }
 
-const snakeStringToCamel = (value) => {
-  return value.replace(/_(\w)/g, (m) => m[1].toUpperCase())
-}
-
+const snakeStringToCamel = (str) => str.replace(/_(\w)/g, (m) => m[1].toUpperCase())
 const snakeToCamel = toCase(snakeStringToCamel)
 
+const camelStringToSnake = (str) => str.replace(/[A-Z]/g, m => `_${m.toLowerCase()}`)
+const camelToSnake = toCase(camelStringToSnake)
+
 module.exports = {
-  snakeToCamel
+  snakeToCamel,
+  camelToSnake,
 }
